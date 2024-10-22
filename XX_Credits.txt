@@ -1,0 +1,22 @@
+About & Credits
+
+About:
+
+
+
+Tools:
+Text to ASCII Art Generator: http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20
+
+
+Tutorials I watched:
+Menu Concept - Michael Hadley: https://www.youtube.com/watch?v=qAWhGEPMlS8
+Scene Structure - Michael Hadley: https://www.youtube.com/watch?v=eBadZxYe6I4&list=PL-LDQE9x9hLwldZPPGwqXixr-_DfINfxk&index=33
+
+
+Art Assets:
+Beach Scene: by jgs - https://www.asciiart.eu/nature/beach
+River Scene: by Lester AMC - https://www.asciiart.eu/nature/waterfall
+Jungle Scene: by jgs - https://asciiart.website/index.php?art=plants/trees
+Hills Scene: by unknown - https://www.asciiart.eu/nature/mountains
+Grasslands Scene: Flower garden by Joan G. Stark - https://www.asciiart.eu/plants/flowers
+EndDayScene: by unknown - https://www.asciiart.eu/nature/sunset

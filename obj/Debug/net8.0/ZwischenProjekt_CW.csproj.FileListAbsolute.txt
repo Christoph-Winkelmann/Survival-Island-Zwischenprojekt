@@ -1,0 +1,17 @@
+C:\Users\Christoph\OneDrive - LG-Academy\01 Meine Dateien\Lernmaterial\SE GL\Visual Studio\Test_Mappe\ZwischenProjekt_CW\bin\Debug\net8.0\ZwischenProjekt_CW.exe
+C:\Users\Christoph\OneDrive - LG-Academy\01 Meine Dateien\Lernmaterial\SE GL\Visual Studio\Test_Mappe\ZwischenProjekt_CW\bin\Debug\net8.0\ZwischenProjekt_CW.deps.json
+C:\Users\Christoph\OneDrive - LG-Academy\01 Meine Dateien\Lernmaterial\SE GL\Visual Studio\Test_Mappe\ZwischenProjekt_CW\bin\Debug\net8.0\ZwischenProjekt_CW.runtimeconfig.json
+C:\Users\Christoph\OneDrive - LG-Academy\01 Meine Dateien\Lernmaterial\SE GL\Visual Studio\Test_Mappe\ZwischenProjekt_CW\bin\Debug\net8.0\ZwischenProjekt_CW.dll
+C:\Users\Christoph\OneDrive - LG-Academy\01 Meine Dateien\Lernmaterial\SE GL\Visual Studio\Test_Mappe\ZwischenProjekt_CW\bin\Debug\net8.0\ZwischenProjekt_CW.pdb
+C:\Users\Christoph\OneDrive - LG-Academy\01 Meine Dateien\Lernmaterial\SE GL\Visual Studio\Test_Mappe\ZwischenProjekt_CW\obj\Debug\net8.0\ZwischenProjekt_CW.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Christoph\OneDrive - LG-Academy\01 Meine Dateien\Lernmaterial\SE GL\Visual Studio\Test_Mappe\ZwischenProjekt_CW\obj\Debug\net8.0\ZwischenProjekt_CW.AssemblyInfoInputs.cache
+C:\Users\Christoph\OneDrive - LG-Academy\01 Meine Dateien\Lernmaterial\SE GL\Visual Studio\Test_Mappe\ZwischenProjekt_CW\obj\Debug\net8.0\ZwischenProjekt_CW.AssemblyInfo.cs
+C:\Users\Christoph\OneDrive - LG-Academy\01 Meine Dateien\Lernmaterial\SE GL\Visual Studio\Test_Mappe\ZwischenProjekt_CW\obj\Debug\net8.0\ZwischenProjekt_CW.csproj.CoreCompileInputs.cache
+C:\Users\Christoph\OneDrive - LG-Academy\01 Meine Dateien\Lernmaterial\SE GL\Visual Studio\Test_Mappe\ZwischenProjekt_CW\obj\Debug\net8.0\ZwischenProjekt_CW.dll
+C:\Users\Christoph\OneDrive - LG-Academy\01 Meine Dateien\Lernmaterial\SE GL\Visual Studio\Test_Mappe\ZwischenProjekt_CW\obj\Debug\net8.0\refint\ZwischenProjekt_CW.dll
+C:\Users\Christoph\OneDrive - LG-Academy\01 Meine Dateien\Lernmaterial\SE GL\Visual Studio\Test_Mappe\ZwischenProjekt_CW\obj\Debug\net8.0\ZwischenProjekt_CW.pdb
+C:\Users\Christoph\OneDrive - LG-Academy\01 Meine Dateien\Lernmaterial\SE GL\Visual Studio\Test_Mappe\ZwischenProjekt_CW\obj\Debug\net8.0\ZwischenProjekt_CW.genruntimeconfig.cache
+C:\Users\Christoph\OneDrive - LG-Academy\01 Meine Dateien\Lernmaterial\SE GL\Visual Studio\Test_Mappe\ZwischenProjekt_CW\obj\Debug\net8.0\ref\ZwischenProjekt_CW.dll
+C:\Users\Christoph\OneDrive - LG-Academy\01 Meine Dateien\Lernmaterial\SE GL\Visual Studio\Test_Mappe\ZwischenProjekt_CW\obj\Debug\net8.0\ZwischenProjekt_CW.csproj.AssemblyReference.cache
+C:\Users\Christoph\OneDrive - LG-Academy\01 Meine Dateien\Lernmaterial\SE GL\Visual Studio\Test_Mappe\ZwischenProjekt_CW\bin\Debug\net8.0\Colorful.Console.dll
+C:\Users\Christoph\OneDrive - LG-Academy\01 Meine Dateien\Lernmaterial\SE GL\Visual Studio\Test_Mappe\ZwischenProjekt_CW\obj\Debug\net8.0\Zwischen.033E82FD.Up2Date

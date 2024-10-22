@@ -1,0 +1,200 @@
+
+ =====================
+||                   ||
+||       About       ||
+||                   ||
+ =====================
+
+Bei "Survival Island" handelt es sich um ein Zwischenprojekt im Rahmen meiner Umschulung zum Fachinformatiker (Anwendungsentwicklung) bei der Lutz + Grub GmbH.
+Die Vorgaben sind:
+	Erstellung einer Konsolen-App in C# unter Einbezug der Grundlagen des Programmierens.
+	Dokumentation des Prozesses.
+
+Worum geht es bei "Survival Island"?
+Mein Programm ist ein Survival-Spiel. Der Anwender schlüpft in die Rolle eines Charakters, der aus unbekannten Gründen auf einer einsamen Insel gestrandet ist. Um zu überleben, müssen Rohstoffe gesammelt, die Insel erforscht, Werkzeuge gebaut und zuletzt ein Floß gebaut werden. Dabei gilt es, genug Nahrung zu haben, um nicht zu verhungern.
+
+Gameplay
+Zu Beginn sucht sich der Spieler den Beruf seines Charakters aus. Jeder Beruf hat eigene Spielwerte, die verschiedene Dinge im Spiel beeinflussen (Menge der gesammelten Rohstoffe, Kapazität der Hunger-Leiste, wie viel Hunger pro AKtion verbraucht wird und ein Glücks-Faktor). Der Spieler kann seinem Charakter noch einen Namen geben.
+Das Spiel führt den Spieler durch Menüs, in denen der Spieler je nach Kontext seine Aktionen frei wählen kann.
+Jede Aktion verbraucht Zeit und Hunger. Am Ende des Tages gibt es eine Zusammenfassung, der Charakter isst und ein neuer Tag beginnt.
+
+Siegbedingung
+Sobald der Spieler das Floß gebaut hat und der Charakter am Ende des Tages nicht verhungert ist, hat er das Spiel gewonnen.
+
+Game Over
+Ist am Ende des Tages der Hunger auf 0 gesunken, ist das Spiel verloren.
+
+
+ =====================================
+||                                   ||
+||     Changelog / Dokumentation     ||
+||                                   ||
+ =====================================
+
+
+16.10.2024
+	+ An Konzept in Exkalidraw gearbeitet. Die Kenzipierung auf dem jetzigen Stand gelassen und mit der Umsetzung angefangen.
+	+ Klasse "Menu" erstellt und fertig gestellt. Erstellt individuelle Menü-Objekte.
+		- Aus vergangenen Projekten war das Programmieren von Menüs immer sehr umständlich. Ich hatte zu viel Code gebraucht und eine hohe Redundanz.
+		- Bei der Recherche nach klugen Lösungen stößt man auf unglaublich viele Inhalte im Internet.
+		- Der hier vorliegende Ansatz ist sehr modular und kann für jedes Menü oder jeden Entscheidungs-Dialog im gesamten Programm genutzt werden.
+		- Ich habe auch Ansätze gefunden, die das "Flackern" beim Re-Rendering der Anzeige entfernen oder die den Text zentrieren oder mit Farbe arbeiten.
+		- Ich habe mich dennoch für diese minimalistische Lösung entschieden, weil die anderen Lösungen viel mehr Code und Einarbeitung erfordern, was wiederum über den Zweck dieses Projektes hinaus geht. 
+	+ Klasse "Game" erstellt. Wird später möglicherweise noch erweitert oder umbenannt. Momentan ruft sie nur das Hauptmenü auf.
+		- Diese Klasse ist der zentrale Ort, an dem der Spielverlauf abgebildet ist.
+		- Diesen Ort brauche ich aus Gründen der Übersichtlichkeit.
+
+17.10.2024
+	+ Location-Klasse erstellt und Gedanken zur Konzeption der Klasse gemacht. Folgende Gedanken ohne externen Input:
+		- Noch unklar, ob die speziellen Locations Objekte oder eigene Unterklassen sein sollen. Viel ausprobiert. Noch keine zufriedenstellende Lösung. Momentan abstrakte Klasse.
+		- Geplant: Reise-System funktioniert auf Basis der Menü-Klasse. Das Prinzip sollte das Selbe sein.
+		- Geplant: GatherResources() Methode braucht einen Algorithmus, welcher verschiedene Faktoren berücksichtigt (Basis-Wert(RNG) * Ort(Konst.) + Spieler-Attribut(Konst.) + Werkzeug(Konst.))
+		- Die Menge jedes Rohstoffes soll während der Laufzeit der Methode entsprechend angepasst werden. -> wo und wie gestalte ich die Schnittstelle?
+		- Geplant: EndDay() Methode soll ein Mechanismus sein, der immer dann ausgeführt wird, sobald alle Aktionen/Tag vebraucht sind (zurücksetzen bestimmter Variablen, Tages-Zusammenfassung ausgeben, ...)
+	+ Inventar konzipiert:
+		- Das Inventar ist eigentlich nur eine Gruppe von bestimmten Variablen. Aus diesem Grund habe ich sie in die statische Klasse "Mechanics" geschrieben.
+		- Das Inventar beinhaltet eine Variable (int) je Rohstoff.
+		- Diese Variablen habe ich bewusst nicht gekapselt, weil sie ja dazu da sind, von überall geändert werden zu können.
+		- Von wo aus soll auf sie zugegriffen werden: GatherResources() -> Klasse "Location", Craft(x, y, z) -> Klasse "Player"???, Eat() -> Klasse "Player"???
+
+18.10.2024
+	+ Unzufrieden mit dem Stand der "Location-Klasse". Unklarheit darüber, wie diese am besten einzubinden ist.
+	+ Recherche im Internet bezüglich Strukturierung und Organisation von Klassen und deren Vernetzung untereinander (Quelle: siehe unten)
+	+ Aus Gründen der Übersichtlichkeit der Projektmappe die bisherigen Dateien in themenbezogene Ordner sortiert. Namespaces kontrolliert.
+	+ Inspiriert durch das oben genannte Tutorial für jedes Menü-Fenster eine eigene Klasse erstellt. Diese werden in der Game-Klasse erstellt und können über die Game-Klasse untereinander aufgerufen werden.
+	+ Erstellen einer statischen ASCII_Art-Klasse, um die Artworks gut sortiert an einem zentralen Ort zu haben. In den Menü-Screens haben die Artworks zu viel Platz eingenommen.
+	  Dies ermöglicht auch bei Bedarf das einfache Ändern von Titel und anderen Überschriften zu einem späteren Zeitpunkt.
+	+ Vererbungs-Hierarchie erstellt. "Scene"-Klasse vererbt an die Menüs, sowie and die "Location"-Klasse, welche wiederum an die jeweiligen Locations vererbt.
+	+ Aktions-Menüs der Locations erstellt. Es ist nun möglich, eine "Rundreise" über die Insel zu machen.
+		- Die Location "Cave" wird bis auf Weiteres nicht implementiert. Dies soll ein geheimer Ort sein, der als Abkürzung dient.
+		  Hierfür ist jedoch einiges an Logik noch nicht vorhanden (Player-Stats, Zufallsproben zum finden des Höhleneingangs, Speichern, ob der Spieler schon einmal an einem bestimmten Ort gewesen ist, ...)
+		  Da jedoch andere Punkte wichtiger sind für die Fertigstellung und Spielbarkeit des Programms, wird diese Location erst später hinzugefügt. Dies sollte dank der modularen Funktion kein Problem darstellen.
+
+19.10.2024
+	+ Formatierung der Menü- und Location-Szenen. Angleichung der Leerzeilen für eine möglichst gleichförmige Präsentation.
+	+ Probleme mit der Player-Class:
+		- Ansatz: Player als Parent, die jeweiligen Professions als Children
+		- User soll am Anfang auswählen, welche Profession sein Charakter haben soll.
+		- Die Profession bietet für bestimmte Variablen jeweils verschiedene Werte an.
+		- Diese Variablen sollen an anderer Stelle im Programm einbezogen werden (z.B. GatherResources()).
+		- Je nach Profession gibt es dann unterschiedliche Ergebnisse bzw. die Algorithmen arbeiten mit unterschiedlichen Werten.
+		- Problem: Wie und wo speichere ich die Wahl des Users (die gewählte Profession), sodass andere Methoden und Klassen auf die richtigen Werte zugreifen?
+
+20.10.2024
+	+ Player-Class und die Child-Classes gelöscht und noch einmal geschrieben. Heute mit neuer Kraft und Konzentration.
+	+ Dieses Mal in kleineren Schritten geprüft, in wie weit der Code tut, was ich von ihm möchte:
+		- "Player" ist die Parent-Class. Sie stellt die Felder und den Constructor zur Verfügung, sowie virtuelle Methoden.
+		- "Cook" und "Carpenter" als Children von "Player" ertstellt. Sie erben von Player und überschreiben die virtuellen Methoden mit ihren speziellen Versionen.
+	+ Das Entscheidende passiert in der "Game"-Class:
+		- Mithilfe einer Liste und einer Methode, die ein Player-Objekt erstellt, kann ich nun ein vom User gewähltes Child von Player dieser Liste hinzufügen und mich mit einer Referenz wie "PlayerList[0]" auf dieses individuelle Objekt beziehen, welches jedes Mal ein anderes sein kann. Yay XD
+	+ Ein weiteres Mal die Locations überarbeitet.
+		- Die Methode Travel() steht jetzt zentral in der Klasse "Location" und vermeidet damit die Redundanz, sie in jeder Unterklasse einzeln zu haben
+	+ Spielwerte und konkrete Daten für die Professions und einzelnen Locations eingegeben. Als Grundlage zur Berechnung der Methode GatherResources()
+		- GatherResources() steht in "Player".
+		- Durch die Listen "ActiveLocationList" und "PlayerList" (in "Game") werden dynamisch die korrekten Werte zur Berechnung der GatherResources() Methode herangezogen.
+		- Möglicherweise werden die Werte im Nachhinein noch angepasst, um das Balancing zu verbessern.
+	+ Damit begonnen, das Crafting System zu implementieren.
+		- Steht momentan in der Klasse "Inventory"
+		- Es werden Listen geführt, die bereits gekraftete und noch nicht gecraftete Werkzeuge als String führen. Die Liste mit noch nicht gecrafteten Werkzeugen bietet gleichzeitig die Optionen im Crafting-Menü an.
+		- Momentan noch Probleme mit der DisplayHeader() Methode. Diese steht in "Location" und ich kann sie aus "Inventory" nicht aufrufen.
+
+21.10.2024
+	+ Crafting System vollständig implementiert.
+		- Es kann alles gecrafet werden und es können nach Belieben neue Rezepte hinzugefügt werden oder die Rohstoff Ksoten geändert werden.
+	+ Den Flow des Programmes so geleitet, dass alle Aktionen, die der Spieler tut über die Mechanics Klasse laufen.
+		- Dies ermöglicht das bessere Verfolgen, was genau der Spieler tut und schaltet zentral in der Mechanics Klasse die entsprechenden Flags an und aus.
+	+ Zeitfluss  und Hunger implementiert.
+		- Jede Aktion lässt die Zeit voranschreiten und verbraucht eine bestimmte Menge "Hunger"
+		- Der Hunger Verbrauch berechnet sich aus der Art der Aktion und dem Vitalitäts-Wert der gewählten Profession.
+	+ Szene für das Ende des Tages hinzugefügt.
+		- Der Spieler bekommt eine stimmungsvolle Zusammenfassung dessen, was er am Tag gemacht hat.
+		- Alle täglichen Variablen werden zurückgesetzt und der gesamt Tages-Counter wird hochgezählt.
+		- Der Spieler verbraucht Nahrung. Hierzu wird berechnet, wie viel "Hunger" ihm fehlt und wie viel Nahrung vorhanden ist. Er isst, soviel er kann, aber nicht mehr als er braucht.
+	+ Game Over Szene hinzugefügt.
+		- Wird am Ende des Tages anstatt der EndDaySscene ausgelöst, falls der Spieler 0 oder weniger Hunger hat.
+		- Hat bisher nur Platzhalter-Text
+		- beendet aber das Programm
+	+ Epilog Szene hinzugefügt
+		- Wird am Ende des Tages anstatt der EndDaySzene ausgelöst, falls der Spieler das Raft gebaut hat.
+		- Hat bisher nur Platzhalter-Text
+		- beendet aber das Programm
+	+ Viel getestet und viele Bugs entfernt.
+		- Es gab überall noch Kleinigkeiten, wegen denen manche Mechaniken nicht funktioniert haben oder es eine Exception gab.
+		- Nach und nach alle Logik-Fehler entfernt
+
+22.10.2024
+	+	Weitere Tests durchgeführt.
+		- In EndDayScene Mechanismus zum Nahrungsverbrauch geändert, sodass das Campfire die benötigte Nahrung zum selben Effekt halbiert.
+	+	Beschreibungen der einzelnen Locations ausgeschmückt.
+	+	IntroScene ausgearbeitet: Text hinzugefügt.
+	+	CreditsScene fertig gestellt: Text hinzugefügt.
+	+	AboutScene fertig gestellt: Text hinzugefügt.
+	+	EndScreen fertig gestellt: Text hinzugefügt.
+	+	EpilogueScene fertig gestellt: Text hinzugefügt.
+	+	GameOverScene fertig gestellt: Text hinzugefügt.
+	+	Disclaimer für Programm start hinzugefügt.
+		- gibt den Stand der Entwicklung wieder und weißt auf eventuelle Probleme hin.
+
+
+
+
+
+
+ =====================
+||                   ||
+||   Dokumentation   ||
+||                   ||
+ =====================
+
+
+###################
+###   Klassen   ###
+###################
+
+
+ --------
+|| Menu ||
+ --------
+
+Diese Klasse regelt die Erstellung, Navigation und Auswahl von Optionen von und in Menüs.
+Mithilfe des Konstruktors können individuelle Menü-Objekte erstellt werden.
+
+
+Felder:
+
+	_menuPrompt: Zeigt einen string als Titel, Überschrift oder Aufforderung über den darunter aufgelisteten Optionen an. Soll dem User Kontext geben. 
+		(private string _menuPromt)
+
+	_menuOptions: Dies ist ein string-Array, welches sämtliche Optionen enthält, die in dem jeweiligen Menü angezeigt werden sollen. 
+		(private string[] _menuOptions)
+
+	_selectedIndex: Dies ist ein Integer, welches den Index des string-Arrays "_menuOptions" repräsentiert. Wird genutzt, um die Auswahl des Users umzusetzen. 
+		(private int _selectedIndex)
+
+
+Konstruktor:
+
+	Der Konstruktor sieht wie folgt aus: 
+		public Menu(string promt, string[] options)
+	Beispiel:
+		Menu mainMenu = new Menu("Hautmenü", ["Start", "Hilfe", "Credits", "Beenden"])
+
+
+Methoden:
+
+
+	DisplayMainTitle(): Zeigt eine ASCII Grafik des Spiele Titels an "Survival Island"
+
+	DisplayMenuOptions(): Zeigt den Prompt an. Nimmt die Elemente aus dem im Konstruktor eingegebenen Array und Listet sie unter dem Prompt auf. Markiert das Element, welches dem "_selectedIndex" entspricht. Da der "_selectedIndex" standardmäßig auf 0 steht, ist zunächst die erste Option als aktiv markiert.
+
+	GetMenuChoice(): Dies ist ein "do-while-Loop". Es ruft die Methode DisplayMenuOptions() auf und wartet dann auf einen Tastendruck des Users. Entsprechend der Eingabe wird "_selectedIndex" manipuliert. "Pfeiltaste nach oben" dekrementiert ihn. "Pfeiltaste nach unten" inkrementiert ihn. Verlässt "_selectedIndex" die individuelle Größe des Arrays auf einer Seite, wird er auf die gegenüberliegende Seite gesetzt. Dies lässt ihn zirkulieren 
+
+	  z.B.: Das Array hat die Länge 3. Wird "_SelectedIndex" -1, so wird er automatisch auf 2 gesetzt. Wird er 3, so wird er auf 0 gesetzt. Passt sich dynamisch der Länge des Arrays an.
+  
+	  Mit der "Enter-Tate" wird das Loop verlassen und "_selectedIndex" wird als Integer von der Methode zurückgegeben.
+
+	  Sprich: Diese Methode gibt zurück, welche Option der User ausgewählt hat.
+
+--------
+| Game |
+--------
