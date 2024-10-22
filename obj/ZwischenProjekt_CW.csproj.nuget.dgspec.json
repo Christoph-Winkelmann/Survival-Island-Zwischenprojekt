@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Christoph\\OneDrive - LG-Academy\\01 Meine Dateien\\Lernmaterial\\SE GL\\Visual Studio\\Test_Mappe\\ZwischenProjekt_CW\\ZwischenProjekt_CW.csproj": {}
+    "C:\\Users\\Christoph\\VS-Code-Projects\\Survival-Island\\ZwischenProjekt_CW\\ZwischenProjekt_CW.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Christoph\\OneDrive - LG-Academy\\01 Meine Dateien\\Lernmaterial\\SE GL\\Visual Studio\\Test_Mappe\\ZwischenProjekt_CW\\ZwischenProjekt_CW.csproj": {
+    "C:\\Users\\Christoph\\VS-Code-Projects\\Survival-Island\\ZwischenProjekt_CW\\ZwischenProjekt_CW.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Christoph\\OneDrive - LG-Academy\\01 Meine Dateien\\Lernmaterial\\SE GL\\Visual Studio\\Test_Mappe\\ZwischenProjekt_CW\\ZwischenProjekt_CW.csproj",
+        "projectUniqueName": "C:\\Users\\Christoph\\VS-Code-Projects\\Survival-Island\\ZwischenProjekt_CW\\ZwischenProjekt_CW.csproj",
         "projectName": "ZwischenProjekt_CW",
-        "projectPath": "C:\\Users\\Christoph\\OneDrive - LG-Academy\\01 Meine Dateien\\Lernmaterial\\SE GL\\Visual Studio\\Test_Mappe\\ZwischenProjekt_CW\\ZwischenProjekt_CW.csproj",
+        "projectPath": "C:\\Users\\Christoph\\VS-Code-Projects\\Survival-Island\\ZwischenProjekt_CW\\ZwischenProjekt_CW.csproj",
         "packagesPath": "C:\\Users\\Christoph\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Christoph\\OneDrive - LG-Academy\\01 Meine Dateien\\Lernmaterial\\SE GL\\Visual Studio\\Test_Mappe\\ZwischenProjekt_CW\\obj\\",
+        "outputPath": "C:\\Users\\Christoph\\VS-Code-Projects\\Survival-Island\\ZwischenProjekt_CW\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Christoph\\AppData\\Roaming\\NuGet\\NuGet.Config",

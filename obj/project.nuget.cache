@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Hlbb+4tvsAY=",
+  "dgSpecHash": "26ozTevDIUg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Christoph\\OneDrive - LG-Academy\\01 Meine Dateien\\Lernmaterial\\SE GL\\Visual Studio\\Test_Mappe\\ZwischenProjekt_CW\\ZwischenProjekt_CW.csproj",
+  "projectFilePath": "C:\\Users\\Christoph\\VS-Code-Projects\\Survival-Island\\ZwischenProjekt_CW\\ZwischenProjekt_CW.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Christoph\\.nuget\\packages\\colorful.console\\1.2.15\\colorful.console.1.2.15.nupkg.sha512",
     "C:\\Users\\Christoph\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",

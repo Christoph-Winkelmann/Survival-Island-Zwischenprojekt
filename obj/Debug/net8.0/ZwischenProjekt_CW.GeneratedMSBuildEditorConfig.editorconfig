@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ZwischenProjekt_CW
-build_property.ProjectDir = C:\Users\Christoph\OneDrive - LG-Academy\01 Meine Dateien\Lernmaterial\SE GL\Visual Studio\Test_Mappe\ZwischenProjekt_CW\
+build_property.ProjectDir = C:\Users\Christoph\VS-Code-Projects\Survival-Island\ZwischenProjekt_CW\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
