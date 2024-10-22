@@ -36,11 +36,11 @@ namespace ZwischenProjekt_CW
         public static List<string> craftedRaftParts = new List<string>();
         public static List<string> notCraftedTools = new List<string>()
         {
-            $"Axe ({axeRecipe[1]} Sticks, {axeRecipe[2]} Fibers, {axeRecipe[3]} Small Stones) - get more logs",
-            $"Basket ({basketRecipe[1]} Sticks, {basketRecipe[2]} Fibers) - get more sticks, fibers, small stones and food",
-            $"Spear ({spearRecipe[0]} Logs, {spearRecipe[2]} Fibers, {spearRecipe[3]} Small Stones) !!! craftable, but no effect yet !!!",
+            $"Axe ({axeRecipe[1]} Sticks, {axeRecipe[2]} Fibers, {axeRecipe[3]} Small Stones) - increases log harvest",
+            $"Basket ({basketRecipe[1]} Sticks, {basketRecipe[2]} Fibers) - increases sticks, fibers, small stones and food harvest",
+            $"Spear ({spearRecipe[0]} Logs, {spearRecipe[2]} Fibers, {spearRecipe[3]} Small Stones) !!! WIP !!!",
             $"Campfire ({campfireRecipe[0]} Logs, {campfireRecipe[1]} Sticks, {campfireRecipe[2]} Fibers, {campfireRecipe[4]} Big Stones) - consume less food per meal",
-            $"Shelter ({shelterRecipe[0]} Logs, {shelterRecipe[1]} Sticks, {shelterRecipe[2]} Fibers, {shelterRecipe[4]} Big Stones) !!! craftable, but no effect yet !!!",
+            $"Shelter ({shelterRecipe[0]} Logs, {shelterRecipe[1]} Sticks, {shelterRecipe[2]} Fibers, {shelterRecipe[4]} Big Stones) !!! WIP !!!",
             $"Return"
         };
         public static List<string> notCraftedRaftParts = new List<string>()
@@ -102,7 +102,6 @@ namespace ZwischenProjekt_CW
                     CraftRaftRations(); break;
                 case 5: return;
             }
-            CraftRaftPart();
         }
 
 

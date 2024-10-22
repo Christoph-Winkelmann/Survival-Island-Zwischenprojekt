@@ -11,7 +11,7 @@ namespace ZwischenProjekt_CW.Locations
 {
     class Cave : Location
     {
-        public Cave(Game game) : base(game, ASCIIArt.beachArt, "Cave", 0.25, 1, 0.25, 1.75, 0.75, 0.75, 1.5)
+        public Cave(Game game) : base(game, ASCIIArt.beachArt, "Cave", 0.25, 1, 0.25, 1.75, 0.75, 0.75, 1.5) // <- nur Platzhalter Werte
         {
 
         }

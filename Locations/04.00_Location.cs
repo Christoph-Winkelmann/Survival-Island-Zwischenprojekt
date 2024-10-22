@@ -67,7 +67,7 @@ namespace ZwischenProjekt_CW.Locations
 
             Menu craftMenu = new Menu(DisplayHeader(), $"{ASCIIArt.craftingArt}",
                 $"Crafted tools: {string.Join(", ", Crafting.craftedTools)}\n" +
-                $"Finished parts of the raft: {string.Join(", ", Crafting.craftedRaftParts)}\n\n",
+                $"Finished parts of the raft: {string.Join(", ", Crafting.craftedRaftParts)}",
                 options);
 
             int selectedIndex = craftMenu.GetMenuChoice();

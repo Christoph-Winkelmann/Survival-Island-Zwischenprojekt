@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZwischenProjekt_CW")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bcfc9f253ab997ae762ce35f7cd050af92682f82")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+610a6dda92a0cd2ea9f38c01b2ba08d238c9cac4")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZwischenProjekt_CW")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZwischenProjekt_CW")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

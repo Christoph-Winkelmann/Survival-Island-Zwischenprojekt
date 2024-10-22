@@ -21,7 +21,7 @@ namespace ZwischenProjekt_CW.PlayerClass
         public static bool hasAxe = false;
         public static bool hasBasket = false;
         public static bool hasSpear = false;
-        public static bool hasCampfire = true;
+        public static bool hasCampfire = false;
         public static bool hasShelter = false;
         public static bool hasRaft = false;
         public static bool hasBody = false;
@@ -143,17 +143,18 @@ namespace ZwischenProjekt_CW.PlayerClass
             int selectedIndex = travelMenu.GetMenuChoice();
 
             Console.Clear();
+            Console.Write($"You leave the {location._name}. ");
             Game.ActiveLocationList.Clear();
 
             switch (selectedIndex)
             {
                 case 0:
                     Game.ActiveLocationList.Add(location.GetConnectionsObj()[0]);
-                    Console.WriteLine($"You arrive at the {location.GetConnectionsString()[0]}.");
+                    Console.WriteLine($"After a while you arrive at the {location.GetConnectionsString()[0]}.");
                     break;
                 case 1:
                     Game.ActiveLocationList.Add(location.GetConnectionsObj()[1]);
-                    Console.WriteLine($"You arrive at the {location.GetConnectionsString()[1]}.");
+                    Console.WriteLine($"After a while you arrive at the {location.GetConnectionsString()[1]}.");
                     break;
             }
             ConsoleUtilities.WaitForKeyPress();
@@ -162,7 +163,7 @@ namespace ZwischenProjekt_CW.PlayerClass
         public void GatherResources(Location location, Player player)
         {
             Console.Clear();
-            Console.WriteLine($"You search the {location._name} for resources.");
+            Console.WriteLine($"You search the {location._name} for resources.\n");
 
             List<double> newRes = new List<double>();
 
@@ -200,6 +201,7 @@ namespace ZwischenProjekt_CW.PlayerClass
             Console.WriteLine($"Time passes and you have gathered {tempLog} logs, {tempSticks} sticks, {tempFibers} fibers, {tempSSTones} small stones, {tempBStones} big stones and {tempFood} food.");
             if (hasAxe) Console.Write("Your axe helped a lot.");
             if (hasBasket) Console.WriteLine("Your basket increased your yield.");
+            Console.WriteLine();
             Console.WriteLine("You carry your haul back to your camp.");
 
             ConsoleUtilities.WaitForKeyPress();
