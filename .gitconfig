@@ -1,0 +1,5 @@
+[credential]
+	helper = wincred
+[user]
+	email = christoph.winkelmann@live.de
+	name = Christoph-Winkelmann
