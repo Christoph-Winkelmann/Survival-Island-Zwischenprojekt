@@ -19,13 +19,10 @@ namespace ZwischenProjekt_CW.UI_InGame
             Console.Clear();
             Console.WriteLine($"{_artwork}");
             Console.WriteLine($"{ASCIIArt.sunsetArt}");
-            Console.WriteLine(@"
-You put your raft into the water, waves playfully welcoming it. The food rations safely tugged on 
-board you take a last look at the island that has almost become a home to you.
-You avert your gaze and set sail. The wind is taking up, stretching the makeshift fabric of the sail. 
-The raft is jolting up and slowly picking up speed.
-Rudder in hands your new voyage begins. You sail into the sunset.
-");
+            Console.WriteLine($"You put your raft into the water, waves playfully welcoming it. The food rations safely tugged on\n" +
+                $"board you take a last look at the island that has almost become a home to you. You have spent {Mechanics.days} days on this island.\n" +
+                $"You avert your gaze and set sail. The wind is taking up, stretching the makeshift fabric of the sail.\n" +
+                $"Rudder in hands your new voyage begins. You sail into the sunset.");
             ConsoleUtilities.WaitForKeyPress();
             MyGame.EndScreen.Run();
         }

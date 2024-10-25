@@ -3,8 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Christoph\\VS-Code-Projects\\Survival-Island\\ZwischenProjekt_CW\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C04040C0-1ED1-4B6B-BEB0-91362EF134AE}|ZwischenProjekt_CW.csproj|c:\\users\\christoph\\vs-code-projects\\survival-island\\zwischenprojekt_cw\\xx_credits.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{C04040C0-1ED1-4B6B-BEB0-91362EF134AE}|ZwischenProjekt_CW.csproj|solutionrelative:xx_credits.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{C04040C0-1ED1-4B6B-BEB0-91362EF134AE}|ZwischenProjekt_CW.csproj|c:\\users\\christoph\\vs-code-projects\\survival-island\\zwischenprojekt_cw\\playerclass\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C04040C0-1ED1-4B6B-BEB0-91362EF134AE}|ZwischenProjekt_CW.csproj|solutionrelative:playerclass\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C04040C0-1ED1-4B6B-BEB0-91362EF134AE}|ZwischenProjekt_CW.csproj|c:\\users\\christoph\\vs-code-projects\\survival-island\\zwischenprojekt_cw\\ui_ingame\\epiloguescene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C04040C0-1ED1-4B6B-BEB0-91362EF134AE}|ZwischenProjekt_CW.csproj|solutionrelative:ui_ingame\\epiloguescene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C04040C0-1ED1-4B6B-BEB0-91362EF134AE}|ZwischenProjekt_CW.csproj|c:\\users\\christoph\\vs-code-projects\\survival-island\\zwischenprojekt_cw\\ui_ingame\\enddayscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C04040C0-1ED1-4B6B-BEB0-91362EF134AE}|ZwischenProjekt_CW.csproj|solutionrelative:ui_ingame\\enddayscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "XX_Credits.txt",
-              "DocumentMoniker": "C:\\Users\\Christoph\\VS-Code-Projects\\Survival-Island\\ZwischenProjekt_CW\\XX_Credits.txt",
-              "RelativeDocumentMoniker": "XX_Credits.txt",
-              "ToolTip": "C:\\Users\\Christoph\\VS-Code-Projects\\Survival-Island\\ZwischenProjekt_CW\\XX_Credits.txt",
-              "RelativeToolTip": "XX_Credits.txt",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-10-22T16:28:01.725Z",
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Users\\Christoph\\VS-Code-Projects\\Survival-Island\\ZwischenProjekt_CW\\PlayerClass\\Player.cs",
+              "RelativeDocumentMoniker": "PlayerClass\\Player.cs",
+              "ToolTip": "C:\\Users\\Christoph\\VS-Code-Projects\\Survival-Island\\ZwischenProjekt_CW\\PlayerClass\\Player.cs",
+              "RelativeToolTip": "PlayerClass\\Player.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T08:02:45.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EpilogueScene.cs",
+              "DocumentMoniker": "C:\\Users\\Christoph\\VS-Code-Projects\\Survival-Island\\ZwischenProjekt_CW\\UI_InGame\\EpilogueScene.cs",
+              "RelativeDocumentMoniker": "UI_InGame\\EpilogueScene.cs",
+              "ToolTip": "C:\\Users\\Christoph\\VS-Code-Projects\\Survival-Island\\ZwischenProjekt_CW\\UI_InGame\\EpilogueScene.cs",
+              "RelativeToolTip": "UI_InGame\\EpilogueScene.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAACVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T07:59:35.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EndDayScene.cs",
+              "DocumentMoniker": "C:\\Users\\Christoph\\VS-Code-Projects\\Survival-Island\\ZwischenProjekt_CW\\UI_InGame\\EndDayScene.cs",
+              "RelativeDocumentMoniker": "UI_InGame\\EndDayScene.cs",
+              "ToolTip": "C:\\Users\\Christoph\\VS-Code-Projects\\Survival-Island\\ZwischenProjekt_CW\\UI_InGame\\EndDayScene.cs",
+              "RelativeToolTip": "UI_InGame\\EndDayScene.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAA9wHMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T07:55:41.142Z",
               "EditorCaption": ""
             }
           ]

@@ -105,13 +105,13 @@ namespace ZwischenProjekt_CW.UI_InGame
 
             if (neededFood > availableFoodCF) // wenn nicht genug da ist
             {
-                player._currentHunger += availableFoodCF;
-                inventoryList[5] -= availableFoodCF / 2;
+                player._currentHunger += Math.Round(availableFoodCF);
+                inventoryList[5] -= Math.Round(availableFoodCF / 2);
             }
             else // wenn genug da ist
             {
-                player._currentHunger += neededFood;
-                inventoryList[5] -= neededFood / 2;
+                player._currentHunger += Math.Round(neededFood);
+                inventoryList[5] -= Math.Round(neededFood / 2);
             }
         }
 
